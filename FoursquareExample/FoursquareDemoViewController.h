@@ -1,5 +1,5 @@
 //
-//  main.m
+//  FoursquareDemoViewController.h
 //  FoursquareExample
 //
 //  Created by Ramiro Guerrero & Marco Graciano on 4/24/13.
@@ -30,11 +30,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "FoursquareAppDelegate.h"
+@interface FoursquareDemoViewController : UIViewController
 
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([FoursquareAppDelegate class]));
-    }
-}
+@end

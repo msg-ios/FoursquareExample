@@ -16,6 +16,9 @@
 		28FDF35D17288ADA00B28D39 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FDF35C17288ADA00B28D39 /* Default.png */; };
 		28FDF35F17288ADA00B28D39 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FDF35E17288ADA00B28D39 /* Default@2x.png */; };
 		28FDF36117288ADA00B28D39 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FDF36017288ADA00B28D39 /* Default-568h@2x.png */; };
+		28FDF369172892A200B28D39 /* FoursquareRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDF368172892A200B28D39 /* FoursquareRootViewController.m */; };
+		28FDF36C1728930900B28D39 /* FoursquareDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDF36B1728930900B28D39 /* FoursquareDemoViewController.m */; };
+		31B4098D618C4076A50B604F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69253B6DD2884E1E829BE9C5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		28FDF35C17288ADA00B28D39 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		28FDF35E17288ADA00B28D39 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		28FDF36017288ADA00B28D39 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		28FDF367172892A200B28D39 /* FoursquareRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareRootViewController.h; sourceTree = "<group>"; };
+		28FDF368172892A200B28D39 /* FoursquareRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareRootViewController.m; sourceTree = "<group>"; };
+		28FDF36A1728930900B28D39 /* FoursquareDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareDemoViewController.h; sourceTree = "<group>"; };
+		28FDF36B1728930900B28D39 /* FoursquareDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareDemoViewController.m; sourceTree = "<group>"; };
+		4292B69BD1FD49B38734B851 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		69253B6DD2884E1E829BE9C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,7 @@
 				28FDF34B17288ADA00B28D39 /* UIKit.framework in Frameworks */,
 				28FDF34D17288ADA00B28D39 /* Foundation.framework in Frameworks */,
 				28FDF34F17288ADA00B28D39 /* CoreGraphics.framework in Frameworks */,
+				31B4098D618C4076A50B604F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +64,7 @@
 				28FDF35017288ADA00B28D39 /* FoursquareExample */,
 				28FDF34917288ADA00B28D39 /* Frameworks */,
 				28FDF34817288ADA00B28D39 /* Products */,
+				4292B69BD1FD49B38734B851 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +82,7 @@
 				28FDF34A17288ADA00B28D39 /* UIKit.framework */,
 				28FDF34C17288ADA00B28D39 /* Foundation.framework */,
 				28FDF34E17288ADA00B28D39 /* CoreGraphics.framework */,
+				69253B6DD2884E1E829BE9C5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +92,10 @@
 			children = (
 				28FDF35917288ADA00B28D39 /* FoursquareAppDelegate.h */,
 				28FDF35A17288ADA00B28D39 /* FoursquareAppDelegate.m */,
+				28FDF367172892A200B28D39 /* FoursquareRootViewController.h */,
+				28FDF368172892A200B28D39 /* FoursquareRootViewController.m */,
+				28FDF36A1728930900B28D39 /* FoursquareDemoViewController.h */,
+				28FDF36B1728930900B28D39 /* FoursquareDemoViewController.m */,
 				28FDF35117288ADA00B28D39 /* Supporting Files */,
 			);
 			path = FoursquareExample;
@@ -109,6 +125,7 @@
 				28FDF34317288ADA00B28D39 /* Sources */,
 				28FDF34417288ADA00B28D39 /* Frameworks */,
 				28FDF34517288ADA00B28D39 /* Resources */,
+				A513FBCBF2D34A3F92BF952B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +177,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A513FBCBF2D34A3F92BF952B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28FDF34317288ADA00B28D39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -167,6 +201,8 @@
 			files = (
 				28FDF35717288ADA00B28D39 /* main.m in Sources */,
 				28FDF35B17288ADA00B28D39 /* FoursquareAppDelegate.m in Sources */,
+				28FDF369172892A200B28D39 /* FoursquareRootViewController.m in Sources */,
+				28FDF36C1728930900B28D39 /* FoursquareDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +245,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -233,7 +269,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -242,6 +278,7 @@
 		};
 		28FDF36517288ADA00B28D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4292B69BD1FD49B38734B851 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoursquareExample/FoursquareExample-Prefix.pch";
@@ -253,6 +290,7 @@
 		};
 		28FDF36617288ADA00B28D39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4292B69BD1FD49B38734B851 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoursquareExample/FoursquareExample-Prefix.pch";
@@ -281,6 +319,7 @@
 				28FDF36617288ADA00B28D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

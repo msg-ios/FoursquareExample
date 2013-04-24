@@ -1,5 +1,5 @@
 //
-//  main.m
+//  FoursquareRootViewController.h
 //  FoursquareExample
 //
 //  Created by Ramiro Guerrero & Marco Graciano on 4/24/13.
@@ -29,12 +29,8 @@
 //    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "RMMasterSDK.h"
 
-#import "FoursquareAppDelegate.h"
+@interface FoursquareRootViewController : UIViewController <FoursquareDelegate>
 
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([FoursquareAppDelegate class]));
-    }
-}
+@end
